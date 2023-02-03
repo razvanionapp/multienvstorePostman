@@ -1,0 +1,23 @@
+{
+  "id": 6,
+  "globalId": "48899877-6648-4432-ba02-6fb4b799eaa9",
+  "namespace": {
+    "id": 3,
+    "globalId": "f014e145-22c1-4662-8e15-70b27b96feca",
+    "name": "ns1",
+    "isSystem": false
+  },
+  "name": "NewToken",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "language": "csharp",
+    "compiledRazorLocation": "host",
+    "additionalAssemblies": "",
+    "debug": true,
+    "type": "razor"
+  }
+}

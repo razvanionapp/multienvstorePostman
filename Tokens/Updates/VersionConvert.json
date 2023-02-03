@@ -1,0 +1,24 @@
+{
+  "id": 27,
+  "globalId": "f4996c87-a610-4062-b354-6bd4275868ac",
+  "namespace": {
+    "id": 7,
+    "globalId": "5d46dd75-e6ed-4851-898c-4a6125d6fde5",
+    "name": "Updates",
+    "description": "",
+    "isSystem": true
+  },
+  "name": "VersionConvert",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "declare @v nvarchar(20) = '[TknParams:Version]'\n\n\n--CASE #1 - WHEN VERSION = x.x.x -> 0x.0x.0x\nIF (SELECT (SUBSTRING((SELECT RIGHT(@v, 2)), 1, 1))) = '.' AND (SELECT (SUBSTRING((SELECT RIGHT(@v, 4)), 1, 1))) = '.'\n\tSELECT REPLACE( @v, RIGHT(@v, 5), CONCAT(0, LEFT(@v, 2), 0, SUBSTRING((SELECT RIGHT(@v, 3)), 1, 2), 0, RIGHT(@v, 1)))\n--CASE #2 - WHEN VERSION = x.x.xx -> 0x.0x.xx\nELSE IF (SELECT (SUBSTRING((RIGHT(@v, 3)), 1, 1))) = '.' AND (SELECT (SUBSTRING((RIGHT(@v, 5)), 1, 1))) = '.'\n\tSELECT CONCAT(0, SUBSTRING((LEFT(@v, 2)), 1, 5), 0, SUBSTRING((SELECT RIGHT(@v, 4)), 1, 5))\n--CASE #3 - WHEN VERSION = x.xx.xx -> 0x.xx.xx\nELSE IF (SELECT (SUBSTRING((RIGHT(@v, 3)), 1, 1))) = '.' AND (SELECT (SUBSTRING((RIGHT(@v, 6)), 1, 1))) = '.'\n\tSELECT CONCAT(0, SUBSTRING(@v, 1, 10))\n--CASE #4 - WHEN VERSION = x.xx.x -> 0x.xx.0x\nELSE IF (SELECT (SUBSTRING((LEFT(@v, 2)), 2, 1))) = '.' AND (SELECT (SUBSTRING((RIGHT(@v, 2)), 1, 1))) = '.'\n\tSELECT CONCAT(0, SUBSTRING(@v, 1, 5), 0, SUBSTRING((RIGHT(@v, 1)), 1, 1))\n--CASE #5 - WHEN VERSION = x.xx.xxx -> 0x.xx.xxx\nELSE IF (SELECT (SUBSTRING((LEFT(@v, 2)), 2, 1))) = '.' AND (SELECT (SUBSTRING((RIGHT(@v, 4)), 1, 1))) = '.'\n\tSELECT CONCAT(0, @v)",
+    "defaultColumn": "",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}

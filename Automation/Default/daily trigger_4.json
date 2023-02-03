@@ -1,0 +1,89 @@
+{
+  "ApiId": "ab40408e846b1b47e8deb1",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": false,
+  "Name": "daily trigger",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "Daily",
+      "Parameters": {
+        "Time": "12:00:00 AM",
+        "DaysOfWeek": {
+          "MON": true,
+          "TUE": true,
+          "WED": true,
+          "THU": true,
+          "FRI": true
+        },
+        "OnMissfire": {
+          "IsExpression": false,
+          "Parameters": {},
+          "Value": "FireNow"
+        },
+        "SkipIfRunning": true
+      }
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "ApplyTokens",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {
+        "Tokens": [
+          {
+            "value": "b",
+            "name": "a"
+          }
+        ],
+        "RecursionCount": "1"
+      }
+    },
+    {
+      "ActionType": "ExcelFromSql",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 1,
+      "IsDisabled": false,
+      "Parameters": {
+        "ConnectionString": "",
+        "SqlQuery": "",
+        "BindTokens": [
+          {
+            "value": "b",
+            "name": "a"
+          },
+          {
+            "value": "d",
+            "name": "c"
+          }
+        ],
+        "AddColumnNames": true,
+        "Folder": {
+          "Expression": "",
+          "Value": "",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "Pattern": "",
+        "Duplicates": {
+          "Expression": "",
+          "Value": "Rename",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "FilePassword": "",
+        "WorksheetPassword": "",
+        "StoreAbsoluteURL": "",
+        "StoreRelativeURL": "",
+        "StorePhysicalPath": "",
+        "StoreLinkClick": "",
+        "StoreFileID": "",
+        "DisableForceDownload": ""
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

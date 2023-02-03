@@ -1,0 +1,21 @@
+{
+  "id": 24,
+  "globalId": "0f2c1f29-d6f6-4ccc-8344-589c312b743b",
+  "namespace": {
+    "id": 7,
+    "globalId": "5d46dd75-e6ed-4851-898c-4a6125d6fde5",
+    "name": "Updates",
+    "description": "",
+    "isSystem": true
+  },
+  "name": "GetNextMajorVersion",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "value": "[Updates:GetMajorUpdate(CurrentVersion=[Updates:ReleaseVersion], IsDev=[Updates:CheckIfAppIsDev(URL=[URL:Domain])])]",
+    "type": "string"
+  }
+}

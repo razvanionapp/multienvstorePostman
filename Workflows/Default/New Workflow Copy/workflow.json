@@ -1,0 +1,193 @@
+{
+  "InputFields": [],
+  "OutputFields": [],
+  "Id": 2,
+  "GlobalId": "d4347e5f-e1d5-4c1c-bfa8-b3d06372078e",
+  "ConfigGenerationGlobalId": null,
+  "EnvironmentId": 1,
+  "Name": "New Workflow Copy",
+  "Description": "",
+  "IsDebug": false,
+  "ActionList": {
+    "Id": 2,
+    "EventName": "Event",
+    "Actions": [
+      {
+        "Id": 1,
+        "Description": null,
+        "ActionErrorMessage": null,
+        "Condition": null,
+        "ActionType": "DynamicsCrm.ReadMultipleEntities",
+        "OrderIndex": 0,
+        "ActionParameters": [
+          {
+            "Id": 1,
+            "Name": "Credentials",
+            "Value": {
+              "Type": "dynamicscrm.org.service",
+              "Group": "",
+              "EntireGroup": false
+            },
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 2,
+            "Name": "ContextEntityName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 3,
+            "Name": "LogicalName",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 4,
+            "Name": "IdMapping",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 5,
+            "Name": "AttributeMapping",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 6,
+            "Name": "Conditions",
+            "Value": [
+              {
+                "LogicalOperator": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "And"
+                },
+                "AttributeName": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "a"
+                },
+                "ConditionOperator": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "Equal"
+                },
+                "Value": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "b"
+                }
+              },
+              {
+                "LogicalOperator": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "And"
+                },
+                "AttributeName": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "c"
+                },
+                "ConditionOperator": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "Equal"
+                },
+                "Value": {
+                  "IsExpression": false,
+                  "Expression": "",
+                  "Value": "de"
+                }
+              }
+            ],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 15,
+            "Name": "OrderBy",
+            "Value": [],
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 16,
+            "Name": "ResultCount",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 17,
+            "Name": "PageNumber",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 18,
+            "Name": "PagingCookie",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 19,
+            "Name": "OutputPagingCookie",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          },
+          {
+            "Id": 20,
+            "Name": "OutputTotalRecordsCount",
+            "Value": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "ActionId": 1,
+            "OrderIndex": 0
+          }
+        ],
+        "DiagramUID": "Activity_0a5o3ap"
+      }
+    ],
+    "IsInvalid": false
+  },
+  "CreatedBy": 1,
+  "CreatedOn": "2021-09-16T15:54:39.0060588+03:00",
+  "LastModifiedBy": 1,
+  "LastModifiedOn": "2021-09-20T17:56:23.7992394+03:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "8098259e-211f-491a-b2c3-4f12861210ad"
+}

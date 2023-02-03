@@ -1,0 +1,196 @@
+<module type="ActionGrid" version="05.15.26.00">
+    <contentKey />
+    <moduleID>3792</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>avt.ActionGrid</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>e25cc300-2ea6-43f8-9c02-eb23f9ff310b</uniqueId>
+    <visibility>Maximized</visibility>
+    <cultureCode />
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>Action Grid</definition>
+    <moduledefinition>avt.ActionGrid</moduledefinition>
+    <content type="ActionGrid" version="05.15.26.00"><![CDATA[&lt;ActionGrid&gt;
+  &lt;Settings&gt;
+    &lt;Version&gt;5.23.0&lt;/Version&gt;
+    &lt;Build&gt;5.23.1&lt;/Build&gt;
+    &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
+    &lt;ModuleId&gt;3792&lt;/ModuleId&gt;
+    &lt;DataSource&gt;{&quot;DefinitionId&quot;:&quot;CteSqlSelect&quot;,&quot;Parameters&quot;:{&quot;ConnectionString&quot;:&quot;&quot;,&quot;SqlQuery&quot;:&quot;SELECT * FROM app.testchild&quot;,&quot;BindTokens&quot;:&quot;&quot;,&quot;SqlQueryColumns&quot;:&quot;&quot;,&quot;SqlQueryInsert&quot;:&quot;&quot;,&quot;SqlQueryUpdate&quot;:&quot;&quot;,&quot;SqlQueryDelete&quot;:&quot;&quot;,&quot;IdColumn&quot;:&quot;Id&quot;,&quot;OrderBy&quot;:&quot;&quot;,&quot;AddUrl&quot;:&quot;&quot;,&quot;EditUrl&quot;:&quot;&quot;,&quot;ViewUrl&quot;:&quot;&quot;},&quot;Fields&quot;:[{&quot;Title&quot;:&quot;Id&quot;,&quot;Name&quot;:&quot;Id&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;CreatedBy&quot;,&quot;Name&quot;:&quot;CreatedBy&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;CreatedDate&quot;,&quot;Name&quot;:&quot;CreatedDate&quot;,&quot;TypeStr&quot;:&quot;System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;LastModifiedBy&quot;,&quot;Name&quot;:&quot;LastModifiedBy&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;LastModifiedDate&quot;,&quot;Name&quot;:&quot;LastModifiedDate&quot;,&quot;TypeStr&quot;:&quot;System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:&quot;name&quot;,&quot;Name&quot;:&quot;name&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:null}]}&lt;/DataSource&gt;
+    &lt;ShowTitle&gt;True&lt;/ShowTitle&gt;
+    &lt;NoDataMessage&gt;No Data&lt;/NoDataMessage&gt;
+    &lt;AditionalHtmlHeader /&gt;
+    &lt;OnInitJs /&gt;
+    &lt;OnRefreshJs /&gt;
+    &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
+    &lt;ShowCondition /&gt;
+    &lt;SearchPlaceholder&gt;Search&lt;/SearchPlaceholder&gt;
+    &lt;SearchDelayTime&gt;300&lt;/SearchDelayTime&gt;
+    &lt;TableHeight /&gt;
+    &lt;PagerStyle&gt;TouchFriendly&lt;/PagerStyle&gt;
+    &lt;DisplayMode&gt;Always&lt;/DisplayMode&gt;
+    &lt;PopupWidth /&gt;
+    &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
+    &lt;PopupName /&gt;
+    &lt;PageSizes&gt;[12,24,48]&lt;/PageSizes&gt;
+    &lt;DefaultPageSize&gt;12&lt;/DefaultPageSize&gt;
+    &lt;IsDebug&gt;False&lt;/IsDebug&gt;
+    &lt;SearchEnabled&gt;True&lt;/SearchEnabled&gt;
+    &lt;HideEmptyGrid&gt;False&lt;/HideEmptyGrid&gt;
+    &lt;LoadOnSearch&gt;False&lt;/LoadOnSearch&gt;
+    &lt;HideTableHead&gt;False&lt;/HideTableHead&gt;
+    &lt;EnableStickyHead&gt;False&lt;/EnableStickyHead&gt;
+    &lt;ItemButtonPosition&gt;Right&lt;/ItemButtonPosition&gt;
+    &lt;ItemButtonPositionInColumn&gt;Right&lt;/ItemButtonPositionInColumn&gt;
+    &lt;ItemButtonGroupingOptions&gt;HorizontalAlign&lt;/ItemButtonGroupingOptions&gt;
+    &lt;FiltersEnabled&gt;True&lt;/FiltersEnabled&gt;
+    &lt;ShowFilters&gt;False&lt;/ShowFilters&gt;
+    &lt;SyncUrl&gt;True&lt;/SyncUrl&gt;
+    &lt;IncludeBootstrapJS&gt;True&lt;/IncludeBootstrapJS&gt;
+    &lt;IncludeBootstrapCSS&gt;True&lt;/IncludeBootstrapCSS&gt;
+    &lt;IncludeFontAwesome&gt;True&lt;/IncludeFontAwesome&gt;
+    &lt;AngularnoConflict&gt;True&lt;/AngularnoConflict&gt;
+    &lt;SelectAllPosition&gt;None&lt;/SelectAllPosition&gt;
+    &lt;SearchPosition&gt;top&lt;/SearchPosition&gt;
+    &lt;RootCSSClasses /&gt;
+    &lt;ModalRefresh&gt;False&lt;/ModalRefresh&gt;
+    &lt;ShowLoading&gt;True&lt;/ShowLoading&gt;
+    &lt;TabsProLoading&gt;False&lt;/TabsProLoading&gt;
+    &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
+    &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
+    &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;ItemButtonGroups&gt;[]&lt;/ItemButtonGroups&gt;
+    &lt;GridButtonGroups&gt;[]&lt;/GridButtonGroups&gt;
+    &lt;ItemButtons&gt;[]&lt;/ItemButtons&gt;
+    &lt;GridButtons&gt;[]&lt;/GridButtons&gt;
+    &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
+    &lt;TooltipContent /&gt;
+    &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+    &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
+    &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
+    &lt;TooltipInEdit&gt;right&lt;/TooltipInEdit&gt;
+    &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+    &lt;TooltipOrientation /&gt;
+    &lt;TooltipTitle /&gt;
+    &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+    &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+    &lt;RefreshOnTabChange&gt;False&lt;/RefreshOnTabChange&gt;
+    &lt;UseDragAndDropActions&gt;False&lt;/UseDragAndDropActions&gt;
+    &lt;DragAndDropActions&gt;[]&lt;/DragAndDropActions&gt;
+    &lt;InitLoadFromTabsPro&gt;False&lt;/InitLoadFromTabsPro&gt;
+    &lt;LockIntoEditMode&gt;False&lt;/LockIntoEditMode&gt;
+    &lt;LockInEditForEachRowActions&gt;[]&lt;/LockInEditForEachRowActions&gt;
+    &lt;LockInEditFinalActions&gt;[]&lt;/LockInEditFinalActions&gt;
+    &lt;Template /&gt;
+    &lt;MobileTemplate /&gt;
+    &lt;SwitchingTemplates&gt;False&lt;/SwitchingTemplates&gt;
+    &lt;TemplateConfig&gt;{}&lt;/TemplateConfig&gt;
+    &lt;Views&gt;[{&quot;Definition&quot;:{&quot;Id&quot;:&quot;Calendar&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Calendar&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Renders data in a calendar based on a date field.&quot;},&quot;FaIcon&quot;:&quot;far fa-calendar-alt&quot;,&quot;TypeStr&quot;:&quot;PlantAnApp.Listing.ViewProviders.CalendarViewProvider, DnnSharp.ActionGrid.Core&quot;,&quot;Settings&quot;:{&quot;showWhenNoData&quot;:true},&quot;Parameters&quot;:[]},&quot;Id&quot;:1274,&quot;ListingModuleId&quot;:3792,&quot;ViewName&quot;:&quot;Calendar&quot;,&quot;ViewTitle&quot;:&quot;Calendar&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:false,&quot;ShowWhenNoData&quot;:true,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;Icon&quot;:&quot;far fa-calendar-alt&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false},{&quot;Definition&quot;:{&quot;Id&quot;:&quot;Cards&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Cards&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Renders data in as cards.&quot;},&quot;FaIcon&quot;:&quot;fas fa-th-large&quot;,&quot;TypeStr&quot;:&quot;PlantAnApp.Listing.ViewProviders.CardViewProvider, DnnSharp.ActionGrid.Core&quot;,&quot;Settings&quot;:{&quot;rendersTopButtons&quot;:false,&quot;rendersBottomButtons&quot;:true},&quot;Parameters&quot;:[{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;PageSizes&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Page Sizes&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Comma delimited list with page sizes that the user can select from.&quot;},&quot;Placeholder&quot;:null,&quot;DefaultValue&quot;:null,&quot;Default&quot;:&quot;10,20,50&quot;,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;DefaultPageSize&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Default Page Size&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;The default page size must be a number from the list with all page sizes.&quot;},&quot;Placeholder&quot;:null,&quot;DefaultValue&quot;:null,&quot;Default&quot;:10,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]}]},&quot;Id&quot;:1275,&quot;ListingModuleId&quot;:3792,&quot;ViewName&quot;:&quot;Cards&quot;,&quot;ViewTitle&quot;:&quot;Cards&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;Icon&quot;:&quot;fas fa-th-large&quot;,&quot;Settings&quot;:{&quot;PageSizes&quot;:{&quot;ViewId&quot;:1275,&quot;Id&quot;:1149,&quot;Name&quot;:&quot;PageSizes&quot;,&quot;ValueType&quot;:&quot;System.String&quot;,&quot;ValueToString&quot;:&quot;10,20,50&quot;,&quot;Value&quot;:&quot;10,20,50&quot;,&quot;LastModifiedBy&quot;:1,&quot;LastModifiedDate&quot;:&quot;2022-02-28T12:04:06.9375669+02:00&quot;,&quot;IsDeleted&quot;:false},&quot;DefaultPageSize&quot;:{&quot;ViewId&quot;:1275,&quot;Id&quot;:1150,&quot;Name&quot;:&quot;DefaultPageSize&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;10&quot;,&quot;Value&quot;:10,&quot;LastModifiedBy&quot;:1,&quot;LastModifiedDate&quot;:&quot;2022-02-28T12:04:06.9385308+02:00&quot;,&quot;IsDeleted&quot;:false}},&quot;IsDeleted&quot;:false},{&quot;Definition&quot;:{&quot;Id&quot;:&quot;DataTable&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Data Table&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Renders data in table format, with one record per row.&quot;},&quot;FaIcon&quot;:&quot;fas fa-th-list&quot;,&quot;TypeStr&quot;:&quot;PlantAnApp.Listing.ViewProviders.DataTableViewProvider, DnnSharp.ActionGrid.Core&quot;,&quot;Settings&quot;:{&quot;rendersTopButtons&quot;:false,&quot;rendersBottomButtons&quot;:true},&quot;Parameters&quot;:[{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;PageSizes&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Page Sizes&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;Comma delimited list with page sizes that the user can select from.&quot;},&quot;Placeholder&quot;:null,&quot;DefaultValue&quot;:null,&quot;Default&quot;:&quot;10,20,50&quot;,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;DefaultPageSize&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Default Page Size&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;The default page size must be a number from the list with all page sizes.&quot;},&quot;Placeholder&quot;:null,&quot;DefaultValue&quot;:null,&quot;Default&quot;:10,&quot;Type&quot;:&quot;Text&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;ItemButtonPosition&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Button Position&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;The default button position.&quot;},&quot;Placeholder&quot;:null,&quot;DefaultValue&quot;:null,&quot;Default&quot;:0,&quot;Type&quot;:&quot;Number&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;ItemButtonPositionInColumn&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Button Position In Column&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;The default button position in column.&quot;},&quot;Placeholder&quot;:null,&quot;DefaultValue&quot;:null,&quot;Default&quot;:0,&quot;Type&quot;:&quot;Number&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]},{&quot;For&quot;:null,&quot;NotFor&quot;:null,&quot;Id&quot;:&quot;ItemButtonGroupingOptions&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Button Position In Column&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;The default button stacking option.&quot;},&quot;Placeholder&quot;:null,&quot;DefaultValue&quot;:null,&quot;Default&quot;:0,&quot;Type&quot;:&quot;Number&quot;,&quot;IsPublic&quot;:false,&quot;Settings&quot;:{},&quot;Validation&quot;:[],&quot;Groups&quot;:null,&quot;Parameters&quot;:[],&quot;Conditions&quot;:[]}]},&quot;Id&quot;:1276,&quot;ListingModuleId&quot;:3792,&quot;ViewName&quot;:&quot;DataTable&quot;,&quot;ViewTitle&quot;:&quot;Data Table&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;Icon&quot;:&quot;fas fa-th-list&quot;,&quot;Settings&quot;:{&quot;PageSizes&quot;:{&quot;ViewId&quot;:1276,&quot;Id&quot;:1151,&quot;Name&quot;:&quot;PageSizes&quot;,&quot;ValueType&quot;:&quot;System.String&quot;,&quot;ValueToString&quot;:&quot;10,20,50&quot;,&quot;Value&quot;:&quot;10,20,50&quot;,&quot;LastModifiedBy&quot;:1,&quot;LastModifiedDate&quot;:&quot;2022-02-28T12:04:06.9395265+02:00&quot;,&quot;IsDeleted&quot;:false},&quot;DefaultPageSize&quot;:{&quot;ViewId&quot;:1276,&quot;Id&quot;:1152,&quot;Name&quot;:&quot;DefaultPageSize&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;10&quot;,&quot;Value&quot;:10,&quot;LastModifiedBy&quot;:1,&quot;LastModifiedDate&quot;:&quot;2022-02-28T12:04:06.9405287+02:00&quot;,&quot;IsDeleted&quot;:false},&quot;ItemButtonPosition&quot;:{&quot;ViewId&quot;:1276,&quot;Id&quot;:1176,&quot;Name&quot;:&quot;ItemButtonPosition&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;0&quot;,&quot;Value&quot;:0,&quot;LastModifiedBy&quot;:1,&quot;LastModifiedDate&quot;:&quot;2022-02-28T12:04:06.9415201+02:00&quot;,&quot;IsDeleted&quot;:false},&quot;ItemButtonPositionInColumn&quot;:{&quot;ViewId&quot;:1276,&quot;Id&quot;:1177,&quot;Name&quot;:&quot;ItemButtonPositionInColumn&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;0&quot;,&quot;Value&quot;:0,&quot;LastModifiedBy&quot;:1,&quot;LastModifiedDate&quot;:&quot;2022-02-28T12:04:06.9415201+02:00&quot;,&quot;IsDeleted&quot;:false},&quot;ItemButtonGroupingOptions&quot;:{&quot;ViewId&quot;:1276,&quot;Id&quot;:1178,&quot;Name&quot;:&quot;ItemButtonGroupingOptions&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;0&quot;,&quot;Value&quot;:0,&quot;LastModifiedBy&quot;:1,&quot;LastModifiedDate&quot;:&quot;2022-02-28T12:04:06.9425176+02:00&quot;,&quot;IsDeleted&quot;:false}},&quot;IsDeleted&quot;:false},{&quot;Definition&quot;:{&quot;Id&quot;:&quot;Legacy&quot;,&quot;Title&quot;:{&quot;default&quot;:&quot;Legacy View&quot;},&quot;HelpText&quot;:{&quot;default&quot;:&quot;The legacy views are replaced by the new rendering engine that has extended capabilities in terms of rendering data in various formats.&quot;},&quot;FaIcon&quot;:&quot;fas fa-th-list&quot;,&quot;TypeStr&quot;:&quot;PlantAnApp.Listing.ViewProviders.LegacyViewProvider, DnnSharp.ActionGrid.Core&quot;,&quot;Settings&quot;:{},&quot;Parameters&quot;:[]},&quot;Id&quot;:1277,&quot;ListingModuleId&quot;:3792,&quot;ViewName&quot;:&quot;Legacy&quot;,&quot;ViewTitle&quot;:&quot;Legacy View&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:false,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:true,&quot;OrderIndex&quot;:3,&quot;Icon&quot;:&quot;fas fa-th-list&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false}]&lt;/Views&gt;
+  &lt;/Settings&gt;
+  &lt;Fields&gt;
+    &lt;FieldInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Title&gt;Id&lt;/Title&gt;
+      &lt;RefName&gt;Id&lt;/RefName&gt;
+      &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
+      &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
+      &lt;IsSortable&gt;true&lt;/IsSortable&gt;
+      &lt;CanBeSortable&gt;true&lt;/CanBeSortable&gt;
+      &lt;IsSearchable&gt;true&lt;/IsSearchable&gt;
+      &lt;AllowHtml&gt;false&lt;/AllowHtml&gt;
+      &lt;CanBeSearchable&gt;true&lt;/CanBeSearchable&gt;
+      &lt;IsFilterable&gt;false&lt;/IsFilterable&gt;
+      &lt;CanBeFilterable&gt;true&lt;/CanBeFilterable&gt;
+      &lt;FormatFilters&gt;false&lt;/FormatFilters&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;FormatterParameters /&gt;
+      &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
+      &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
+      &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+      &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+      &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
+      &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
+      &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
+      &lt;ShowInFooterSumDecimals&gt;2&lt;/ShowInFooterSumDecimals&gt;
+      &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
+      &lt;EditFieldTypeParameters /&gt;
+      &lt;Validation /&gt;
+      &lt;FieldType&gt;Field&lt;/FieldType&gt;
+      &lt;FieldTypeStr&gt;Field&lt;/FieldTypeStr&gt;
+      &lt;ShowOnDetail&gt;true&lt;/ShowOnDetail&gt;
+      &lt;ShowOnMobile&gt;true&lt;/ShowOnMobile&gt;
+      &lt;ShowOnTablet&gt;true&lt;/ShowOnTablet&gt;
+      &lt;ShowOnDesktop&gt;true&lt;/ShowOnDesktop&gt;
+      &lt;ShowOnLargeScreens&gt;true&lt;/ShowOnLargeScreens&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/FieldInfo&gt;
+    &lt;FieldInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Title&gt;name&lt;/Title&gt;
+      &lt;RefName&gt;name&lt;/RefName&gt;
+      &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
+      &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
+      &lt;IsSortable&gt;true&lt;/IsSortable&gt;
+      &lt;CanBeSortable&gt;true&lt;/CanBeSortable&gt;
+      &lt;IsSearchable&gt;true&lt;/IsSearchable&gt;
+      &lt;AllowHtml&gt;false&lt;/AllowHtml&gt;
+      &lt;CanBeSearchable&gt;true&lt;/CanBeSearchable&gt;
+      &lt;IsFilterable&gt;false&lt;/IsFilterable&gt;
+      &lt;CanBeFilterable&gt;true&lt;/CanBeFilterable&gt;
+      &lt;FormatFilters&gt;false&lt;/FormatFilters&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;FormatterParameters /&gt;
+      &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
+      &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+      &lt;TooltipIcon&gt;fas fa-info-circle&lt;/TooltipIcon&gt;
+      &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
+      &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
+      &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+      &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+      &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
+      &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
+      &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
+      &lt;ShowInFooterSumDecimals&gt;2&lt;/ShowInFooterSumDecimals&gt;
+      &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
+      &lt;EditFieldTypeParameters /&gt;
+      &lt;Validation /&gt;
+      &lt;FieldType&gt;Field&lt;/FieldType&gt;
+      &lt;FieldTypeStr&gt;Field&lt;/FieldTypeStr&gt;
+      &lt;ShowOnDetail&gt;true&lt;/ShowOnDetail&gt;
+      &lt;ShowOnMobile&gt;true&lt;/ShowOnMobile&gt;
+      &lt;ShowOnTablet&gt;true&lt;/ShowOnTablet&gt;
+      &lt;ShowOnDesktop&gt;true&lt;/ShowOnDesktop&gt;
+      &lt;ShowOnLargeScreens&gt;true&lt;/ShowOnLargeScreens&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/FieldInfo&gt;
+  &lt;/Fields&gt;
+&lt;/ActionGrid&gt;]]></content>
+</module>

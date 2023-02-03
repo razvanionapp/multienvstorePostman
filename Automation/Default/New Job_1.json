@@ -1,0 +1,27 @@
+{
+  "ApiId": "59471e961c9ddd0ffb513d",
+  "ContextPortal": -1,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "New Job",
+  "Triggers": [],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.1",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {}
+    },
+    {
+      "ActionType": "InjectData",
+      "ExecutionType": "OnExecute",
+      "OrderIndex": 1,
+      "IsDisabled": false,
+      "Parameters": {
+        "Data": ""
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

@@ -1,0 +1,174 @@
+{
+  "Name": "MyObject",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Input": [],
+  "Actions": [
+    {
+      "ActionType": "LoadEntitiesFromJson",
+      "OrderIndex": 0,
+      "Parameters": {
+        "JsonModel": "[{\"action\": \"create\", \"obj\": \"role\"}, {\"action\": \"update\", \"obj\": \"permission\"}]",
+        "EntityName": "acts",
+        "OnError": [],
+        "EnforceISODateTime": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "CreateEntityItem",
+      "OrderIndex": 1,
+      "Parameters": {
+        "EntityName": "testeo",
+        "EntityProps": [
+          {
+            "PropertyName": {
+              "Value": "name",
+              "IsExpression": false
+            },
+            "PropertyValue": {
+              "Value": "lisa",
+              "IsExpression": false
+            },
+            "PropertyType": {
+              "Value": "Property",
+              "IsExpression": false,
+              "Parameters": {}
+            }
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "CreateEntityItem",
+      "OrderIndex": 2,
+      "Parameters": {
+        "EntityName": "testusr",
+        "EntityProps": [
+          {
+            "PropertyName": {
+              "Value": "user",
+              "IsExpression": false
+            },
+            "PropertyValue": {
+              "Value": "testeo",
+              "IsExpression": false
+            },
+            "PropertyType": {
+              "Value": "ObjectProperty",
+              "IsExpression": false,
+              "Parameters": {}
+            }
+          },
+          {
+            "PropertyName": {
+              "Value": "actions",
+              "IsExpression": false
+            },
+            "PropertyValue": {
+              "Value": "acts",
+              "IsExpression": false
+            },
+            "PropertyType": {
+              "Value": "ListProperty",
+              "IsExpression": false,
+              "Parameters": {}
+            }
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "CreateJsonObject",
+      "OrderIndex": 3,
+      "Parameters": {
+        "Properties": [
+          {
+            "Name": {
+              "Value": "result",
+              "IsExpression": false
+            },
+            "Value": {
+              "Value": "testusr",
+              "IsExpression": false
+            },
+            "TypeValidation": {
+              "Value": "EntityObject",
+              "IsExpression": false,
+              "Parameters": {}
+            }
+          }
+        ],
+        "OutputTokenName": "res"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "CreateJsonObject",
+      "OrderIndex": 4,
+      "Parameters": {
+        "Properties": [
+          {
+            "Name": {
+              "Value": "user",
+              "IsExpression": false
+            },
+            "Value": {
+              "Value": "testeo",
+              "IsExpression": false
+            },
+            "TypeValidation": {
+              "Value": "EntityObject",
+              "IsExpression": false,
+              "Parameters": {}
+            }
+          },
+          {
+            "Name": {
+              "Value": "actions",
+              "IsExpression": false
+            },
+            "Value": {
+              "Value": "acts",
+              "IsExpression": false
+            },
+            "TypeValidation": {
+              "Value": "EntityList",
+              "IsExpression": false,
+              "Parameters": {}
+            }
+          }
+        ],
+        "OutputTokenName": "res2"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "OrderIndex": 5,
+      "Parameters": {
+        "Content": "res: [res]\nres2: [res2]",
+        "HttpCode": "",
+        "Headers": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}
